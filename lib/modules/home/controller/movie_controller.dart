@@ -42,9 +42,6 @@ class MovieController extends GetxController {
         isLoadingMore.value = true;
         currentPage.value++;
         fetchMovies();
-      } else if (scrollController.position.pixels == scrollController.position.minScrollExtent) {
-        currentPage.value--;
-        fetchMovies();
       }
     });
 
